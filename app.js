@@ -75,7 +75,7 @@ function drawKittens() {
     // NOTE when using templates you'll need to use backslashes not quotations.
     // NOTE inside you will be pulling from your HTML
     kittenTemplate += `
-    <div id="catImage" class="container m-3 pg-2 bg-dark text-light align-items-center text-center kitten ${kitten.mood} card w-25">
+    <div id="catImage" class="container m-3 pg-2 bg-dark text-light align-items-center text-center kitten ${kitten.mood} card w-50">
   
     <img src="neutralnobg.png" id="neutral" class = "m5 w-50" alt="Moody Kittens">
     
@@ -120,7 +120,7 @@ function pet(id) {
   let rNum = Math.random();
 
   if (currentKitten.affection == 10) {
-    document.getElementById("catImage").src = "happy.png";
+    document.getElementById("happy").src = "happy.png";
     return;
   }
 
